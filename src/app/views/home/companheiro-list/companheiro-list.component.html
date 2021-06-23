@@ -1,10 +1,10 @@
 <mat-tab-group mat-align-tabs="start" style="padding-top: 40px; padding-left: 2%; padding-right: 2%;">
-  <mat-tab label="RACAS">
+  <mat-tab label="RAÇAS">
     <div fxLayout="row" fxLayoutAlign="start center" style="padding: 4;">
       <div style="margin: o.5%;">
-        <h4>mat-select</h4>
+        
         <mat-form-field appearance="fill">
-          <mat-label>Choose an option</mat-label>
+          <mat-label>escolha uma raça</mat-label>
           <mat-select [(value)]="breed_id" (selectionChange)="getCompanheiro()">
             <mat-option [value]="raca.id" *ngFor="let raca of racas">{{raca.name }}</mat-option>
           </mat-select>
